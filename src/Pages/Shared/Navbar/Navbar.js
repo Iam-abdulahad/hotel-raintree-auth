@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Login from "../../Home/Login/Login";
 
 const Navbar = () => {
   return (
@@ -6,24 +8,16 @@ const Navbar = () => {
       <h3 style={styles.logo}>Hotel RainTree</h3>
       <ul style={styles.navLinks}>
         <li style={styles.navItem}>
-          <a href="#" style={styles.navLink}>
-            Home
-          </a>
+          <Link to='/home' style={styles.navLink}>Home</Link>
         </li>
         <li style={styles.navItem}>
-          <a href="#" style={styles.navLink}>
-            About
-          </a>
+          <Link to='/about' style={styles.navLink}>About</Link>
         </li>
         <li style={styles.navItem}>
-          <a href="#" style={styles.navLink}>
-            Services
-          </a>
+          <Link to='/rooms' style={styles.navLink}>Rooms</Link>
         </li>
         <li style={styles.navItem}>
-          <a href="#" style={styles.navLink}>
-            Contact
-          </a>
+          <Link to='/login' style={styles.navLink}>Login</Link>
         </li>
       </ul>
     </nav>
