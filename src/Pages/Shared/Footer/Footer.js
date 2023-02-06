@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3 col-md-6">
-            <h5 className="text-uppercase">Hotel Name</h5>
+            <h5 className="text-uppercase">Digital Fashion</h5>
             <p>
               123 Main St <br />
               City, State Zip <br />
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-3">
-          &copy; {new Date().getFullYear()} Hotel Raintree | All rights reserved
+          &copy; {new Date().getFullYear()} Digital Fashion | All rights reserved
         </div>
       </div>
     </footer>

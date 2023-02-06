@@ -1,12 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Login.css";
+import React, { useState } from "react";
 
-const Login = () => {
+const SignupForm = () => {
+          const [email, setEmail] = useState("");
+          const [password, setPassword] = useState("");
+
+          const handleSubmit = (event) => {
+                    event.preventDefault();
+                    // Perform the signup action here (e.g. sending the data to the server)
+                    console.log("Signup form submitted. Email:", email, "Password:", password);
+          };
+
           return (
                     <div className="login-container">
                               <form className="login-form">
-                                        <h1 className="form-title">Login</h1>
+                                        <h1 className="form-title">Please Register</h1>
                                         <input
                                                   type="email"
                                                   placeholder="Email"
@@ -18,7 +25,7 @@ const Login = () => {
                                                   className="form-input"
                                         />
                                         <button type="submit" className="form-submit">
-                                                  Login
+                                                  Register
                                         </button>
                                         <div className="form-or">or</div>
                                         <button type="button" className="form-google">
@@ -27,16 +34,10 @@ const Login = () => {
                                         <button type="button" className="form-facebook">
                                                   Continue with Facebook
                                         </button>
-                                        <div className="form-register">
-                                                  Don't have an account?{" "}
-                                                  <Link to="/signUp" className="form-register-link">
-                                                            Please register
-                                                  </Link>
-                                        </div>
+                                       
                               </form>
                     </div>
           );
 };
 
-export default Login;
-
+export default SignupForm;

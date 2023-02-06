@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Login from "../../Home/Login/Login";
 
 const Navbar = () => {
   return (
     <nav style={styles.nav}>
-      <h3 style={styles.logo}>Hotel RainTree</h3>
+      <h3 style={styles.logo}>Digital Fashion</h3>
       <ul style={styles.navLinks}>
         <li style={styles.navItem}>
           <Link to='/home' style={styles.navLink}>Home</Link>
