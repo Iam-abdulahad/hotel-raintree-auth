@@ -4,6 +4,15 @@ const SignupForm = () => {
           const [email, setEmail] = useState("");
           const [password, setPassword] = useState("");
 
+
+          const handleEmailBlur = event => {
+                    setEmail(event.target.value);
+          }
+
+          const handlePassBlur = event => {
+                    setPassword(event.target.value);
+          }
+
           const handleSubmit = (event) => {
                     event.preventDefault();
                     // Perform the signup action here (e.g. sending the data to the server)
@@ -34,7 +43,7 @@ const SignupForm = () => {
                                         <button type="button" className="form-facebook">
                                                   Continue with Facebook
                                         </button>
-                                       
+
                               </form>
                     </div>
           );
